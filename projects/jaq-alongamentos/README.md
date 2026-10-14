@@ -34,6 +34,9 @@ Abra o endereço local e configure a conta da dona. Não há credenciais padrão
 
 ## Verificação
 
+O [GitHub Actions](https://github.com/jmmedeiross/Jaq/actions/workflows/ci.yml) executa a suíte de API, regressões, recuperação e interface com Playwright, além dos testes de hospedagem remota, em banco isolado a cada push ou pull request para `main`. Resultados são publicados como artefatos. O estado da última execução aparece no badge do repositório.
+
+
 ```sh
 python tests/run.py
 python tests/remote-hosting.py
